@@ -2,19 +2,21 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>minha pagina</title>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-    <input id="cep">
-    <button type="button" onclick="consultaCep()">Consultar</button>
-    <p id="logradouro"></p>
-    <p id="bairro"></p>
-    <p id="localidade"></p>
-    <p id="uf"></p>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand text-white">Consultar Cep</a>
+        <div class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="CEP" id="cep">
+            <button class="btn btn-outline-success" onclick="consultaCep()">Buscar</button>
+        </div>
+    </nav>
 </body>
 
 </html>
